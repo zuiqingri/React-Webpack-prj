@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server --open",
+    "build": "webpack",
+    "start": "webpack-dev-server --entry ./src/components/App.js --output-filename ./public/bundle.js --open"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-preset-stage-0": "^6.24.1",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
+    "react-addons-update": "^15.6.3",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
